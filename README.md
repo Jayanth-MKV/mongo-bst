@@ -8,25 +8,26 @@ A simple Express and MongoDB project for storing and searching binary trees.
 
 
 2. Install dependencies:
-
+```
 cd binary-tree-express-mongo
 npm install
-
+```
 
 3. Set environment variables:
 
 Create a `.env` file with the following variables:
-
+```
 MONGODB_URI=mongodb://localhost:27017/binary-tree-db
 PORT=3000
-
+```
 
 Replace `mongodb://localhost:27017/binary-tree-db` with the URL of your MongoDB database and `3000` with the desired port number.
 
 4. Start the server:
 
+```
 npm start
-
+```
 
 Alternatively, you can use `npm run dev` to start the server with nodemon for automatic reloading during development.
 
@@ -81,9 +82,9 @@ The response will contain the values of the nodes visited during the search, sep
 
 To run the application in a Docker container, use the following commands:
 
-
+```
 docker build -t binary-tree-express-mongo .
 docker run -p 3000:3000 -d binary-tree-express-mongo
-
+```
 Replace binary-tree-express-mongo with the desired name of the Docker image. The first command builds the image, and the second command starts a container running the image on port 3000.
 
