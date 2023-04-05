@@ -1,0 +1,11 @@
+{
+  "name": "binary-tree",
+  "version": "1.0.0",
+  "description": "A simple Express and MongoDB project for storing and searching binary trees.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay",
+  "license": "ISC"
+}

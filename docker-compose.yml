@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  binary-tree-express-mongo:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/binary-tree-db
+      depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+
+volumes:
+  - ./data:/data/db
